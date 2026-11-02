@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Open Door</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand brand-font fw-semibold" href="index.html">Open Door</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          </ul>
+          <a class="btn btn-gold ms-lg-4 mt-3 mt-lg-0" href="#booking">Book a session</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <div class="container">
+        <p class="hero-kicker mb-2">Visit · Write · Book</p>
+        <h1 class="display-3">Contact us</h1>
+        <p class="lead col-lg-6 mb-0">Share a preferred time and treatment. We will confirm by email or phone.</p>
+      </div>
+    </header>
+
+    <section class="py-5" id="booking">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-card h-100">
+              <h2 class="h3 mb-4">Studio details</h2>
+              <p class="mb-3">
+                <i class="bi bi-geo-alt me-2"></i>City collection ,NL-1A 05/02 Ground floor sector 10 Nerul West<br />
+                <span class="ms-4">Maharashtra 400706</span>
+              </p>
+              <p class="mb-3">
+                <i class="bi bi-telephone me-2"></i>
+                <a href="tel:+917054905787">+91 7054905787</a>
+              </p>
+              <p class="mb-3">
+                <i class="bi bi-envelope me-2"></i>
+                <a href="mailto:"></a>
+              </p>
+              <p class="mb-4">
+                <i class="bi bi-clock me-2"></i>Daily 10:00am – 8:00pm
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5582168542737!2d73.01511917418335!3d19.03917925312934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c34edfa0dc1b%3A0x51b0bca6fa928235!2sOpen%20Door!5e0!3m2!1sen!2sin!4v1793628599669!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-card">
+              <h2 class="h3 mb-3">Request an appointment</h2>
+              <div id="formSuccess" class="alert alert-success alert-success-custom" role="alert">
+                Thank you. Your request was saved on this device. We will be in touch shortly.
+              </div>
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Full name</label>
+                    <input class="form-control" id="name" name="name" required />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" required />
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input class="form-control" type="tel" id="phone" name="phone" required />
+                    <div class="invalid-feedback">Please enter your phone number.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="service">Service</label>
+                    <select class="form-select" id="service" name="service" required>
+                      <option value="" selected disabled>Choose a treatment</option>
+                      <option>Deep Tissue massage</option>
+                      <option>Aromatherapy massage</option>
+                      <option>Deep tissue massage</option>
+                      <option>Glow facial</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose a service.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="date">Preferred date</label>
+                    <input class="form-control" type="date" id="date" name="date" required />
+                    <div class="invalid-feedback">Please pick a date.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Notes</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Pressure preference, allergies, or timing"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-gold" type="submit">Send request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span class="brand-font">Open Door</span>
+        <span>© <span id="year"></span> · Open daily 8am–10pm</span>
+        <a href="index.html">Back to home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
